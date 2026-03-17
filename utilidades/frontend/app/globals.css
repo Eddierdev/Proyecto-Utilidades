@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0D1117;
+    --surface: #161B22;
+    --surface2: #1C2330;
+    --border: rgba(255,255,255,0.08);
+    --border2: rgba(255,255,255,0.14);
+    --text: #E6EDF3;
+    --muted: #7D8590;
+    --hint: #484F58;
+    --amber: #F0A500;
+    --amber-dim: rgba(240,165,0,0.12);
+    --amber-border: rgba(240,165,0,0.25);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  input[type="time"],
+  input[type="number"] {
+    color-scheme: dark;
+  }
+}
